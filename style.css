@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;500&display=swap');
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*padrão rgba:#A09038*/
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+:root{
+    /* colors */
+    --hue: 50;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 60% 40%);
+    --base-color-second: hsl(var(--hue) 65% 50%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+}
+h1{
+    color: var(--title-color);
+}
+body{
+    background-image: url(https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?cs=srgb&dl=pexels-miriam-espacio-110854.jpg&fm=jpg);
+    background-repeat: no-repeat;
+}
+
+.container-general{
+    border: .2px solid var(--text-color);
+    border-radius: 5px;
+    margin: 100px;
+    background-color: var(--text-color);
+    padding: 50px;
+    opacity: 90%;
+    transition: .3s;
+    box-shadow: 5px 5px 5px red;
+
+}
+.container-general:hover{
+    opacity: 100%;
+    box-shadow: 2px 2px 5px rgb(0, 4, 255);
+
+
+}
+button{
+    color: var(--title-color);
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: var(--text-color-light);
+    transition: .4s;
+
+}
+button:hover{
+    background-color: var(--title-color);
+    color: var(--text-color-light);
+}
+button, input{
+    padding: 10px;
+    border-radius: 5px;
+    border: .2px solid var(--text-color);
+}
+
+div.random{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+div.to-dos{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--base-color-alt);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--text-color);
+    transition: .3s;
+    list-style: none;
+    max-width: 500px;
+
+}
+li:hover{
+    box-shadow: 1px 1px 2px var(--text-color);
+    transform: translateY(-4px);
+    border: .5px solid var(--title-color);
+}
+
